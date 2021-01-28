@@ -42,7 +42,7 @@ data = yf.download(  # or pdr.get_data_yahoo(...
     )
 
 
-# print(data[0])
+print(data)
 # print(type(data))
 
 
