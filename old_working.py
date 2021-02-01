@@ -41,17 +41,18 @@ data = yf.download(  # or pdr.get_data_yahoo(...
         proxy = None
     )
 
-
+# all data for given ticker
 print(data)
 # print(type(data))
 
+print('-----------------------------------------')
+
 
 close_prices = data['Close']
-print('qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq')
 print('close_prices: ', close_prices)
 print('close_prices[0]: ', close_prices[0])
-print('latest stock price?  --  close_prices[0]: ', close_prices[-1])
-print('latest stock price?  --  close_prices[0]: ', type(close_prices[-1]))
+print('latest stock price  --  close_prices[0]: ', close_prices[-1])
+# print('latest stock price  --  close_prices[0]: ', type(close_prices[-1]))
 # last_close_price = close_prices[Datetime[0]]
 # print(last_close_price)
 
